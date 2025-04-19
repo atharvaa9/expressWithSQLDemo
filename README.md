@@ -57,6 +57,7 @@ This Todo application features user authentication, CRUD operations for todos, a
 
 ## Project Structure
 
+```bash
 src/
 ├── server.js # Main application entry point
 ├── db.js # Database configuration and schema
@@ -73,6 +74,7 @@ public/
 
 package.json # Project dependencies and scripts
 .env # Environment variables
+```
 
 ## Getting Started
 
