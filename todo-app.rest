@@ -1,0 +1,48 @@
+### GET /
+GET http://localhost:8000
+
+### Register
+POST http://localhost:8000/auth/register
+Content-Type: application/json
+
+{
+   "username": "atharva@gmail.com", 
+   "password": "aaaaaaa" 
+}
+
+###Login
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+
+{
+    "username": "atharva@gmail.com", 
+    "password": "aaaaaaa"
+}
+
+### Fetch all todos GET /todos (protected)
+GET http://localhost:8000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ1MTAzNDQxLCJleHAiOjE3NDUxODk4NDF9.YRweJvek2wzP95h3K1WCXA_c6nyljcpoKu_Ra2xxuFM
+
+### Add a todo (protected)
+POST http://localhost:8000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ1MTAzNDQxLCJleHAiOjE3NDUxODk4NDF9.YRweJvek2wzP95h3K1WCXA_c6nyljcpoKu_Ra2xxuFM
+Content-Type: application/json
+
+{
+    "task" : "lowe"
+}
+
+### Update a todo (protected) /todos/:id
+PUT http://localhost:8000/todos/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ1MTAzNDQxLCJleHAiOjE3NDUxODk4NDF9.YRweJvek2wzP95h3K1WCXA_c6nyljcpoKu_Ra2xxuFM
+Content-Type: application/json
+
+{
+    "completed": 1
+}
+
+
+### Delete a todo (protected) /todos/:id
+DELETE  http://localhost:8000/todos/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ1MTAzNDQxLCJleHAiOjE3NDUxODk4NDF9.YRweJvek2wzP95h3K1WCXA_c6nyljcpoKu_Ra2xxuFM
+Content-Type: application/json
