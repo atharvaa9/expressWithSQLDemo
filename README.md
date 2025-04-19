@@ -57,20 +57,22 @@ This Todo application features user authentication, CRUD operations for todos, a
 
 ## Project Structure
 
-├── src/
-│ ├── server.js # Main application entry point
-│ ├── db.js # Database configuration and schema
-│ ├── routes/
-│ │ ├── authRoutes.js # Authentication routes
-│ │ └── todoRoutes.js # Todo CRUD routes
-│ └── middleware/
-│ └── authMiddleware.js # JWT authentication middleware
-├── public/
-│ ├── index.html # Main HTML file
-│ ├── styles.css # Custom styles
-│ └── fanta.css # CSS framework
-├── package.json # Project dependencies and scripts
-└── .env # Environment variables
+src/
+├── server.js # Main application entry point
+├── db.js # Database configuration and schema
+├── routes/
+│ ├── authRoutes.js # Authentication routes
+│ └── todoRoutes.js # Todo CRUD routes
+└── middleware/
+└── authMiddleware.js # JWT authentication middleware
+
+public/
+├── index.html # Main HTML file
+├── styles.css # Custom styles
+└── fanta.css # CSS framework
+
+package.json # Project dependencies and scripts
+.env # Environment variables
 
 ## Getting Started
 
